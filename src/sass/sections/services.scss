@@ -1,0 +1,104 @@
+.services {
+    padding-top: 55px;
+    padding-bottom: 100px;
+    
+    &__title {
+      margin-bottom: 65px;
+        &::after {
+          content: "";
+          display: block;
+          background-color: rgb(243, 129, 129);
+          width: 60px;
+          height: 3px;
+          margin: 0 auto;
+          }
+    }
+    
+    &__title_first-part {
+      display: block;
+      font-size: 24px;
+      color: rgb(51, 51, 51);
+      line-height: 28px;
+      text-align: center;
+      font-family: 'Kaushan Script';
+      font-style: normal;
+      font-weight: 400;
+      margin-bottom: 20px;
+      
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+    
+    &__title_second-part {
+      display: block;
+      font-size: 30px;
+      line-height: 36px;
+      color: rgb(51, 51, 51);
+      text-transform: uppercase;
+      text-align: center;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 900;
+      margin-bottom: 40px;
+    }
+}
+
+
+.services-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        
+        
+    &__item {
+      margin-bottom: 104px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+              
+      &:nth-child(n+4) {
+        margin-bottom: 0;
+        }
+    }
+    
+    &__item-title {
+      font-size: 14px;
+      line-height: 16px;
+      color: rgb(51, 51, 51);
+      text-transform: uppercase;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      text-align: left;
+      margin-bottom: 16px;
+    }
+    
+    &__item-description {
+      font-size: 15px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      color: rgb(153, 153, 153);
+      line-height: 1.6;
+      text-align: left;
+      width: 270px;
+    }
+    
+    &__item-icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 30px;
+      fill: rgb(149, 225, 211);
+    }
+}
+
+
+

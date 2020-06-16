@@ -1,0 +1,158 @@
+.header {
+    background-image: -webkit-gradient( linear, left bottom, left top, from(rgba(147, 124, 42, 0.8)), to(rgba(243,129,129, 0.9))),
+    url(../images/eagle.jpg);
+    background-image: -o-linear-gradient( bottom, rgba(147, 124, 42, 0.8), rgba(243,129,129, 0.9)),
+    url(../images/eagle.jpg);
+    background-image: linear-gradient( to top, rgba(147, 124, 42, 0.8), rgba(243,129,129, 0.9)),
+    url(../images/eagle.jpg);
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 230px;
+    
+    &__pre-title {
+      font-size: 72px;
+      line-height: 86px;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-family: 'Kaushan Script';
+      font-style: normal;
+      font-weight: 400;
+      margin-bottom: 50px;
+    }
+    
+    &__title {
+      font-size: 150px;
+      line-height: 180px;
+      color: rgb(255, 255, 255);
+      text-transform: uppercase;
+      text-align: center;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 900;
+      width: 853px;
+      margin: 0 auto;
+      margin-bottom: 94px;
+    }
+    
+    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+      
+      background-image: -webkit-gradient( linear, left top, right top, from(rgba(252,227,138,0.5)), to(rgba(243,129,129,0.5))),
+      url(../images/eagle@2x.jpg);
+      background-image: -o-linear-gradient( left, rgba(252,227,138,0.5) 0%, rgba(243,129,129,0.5) 100%),
+      url(../images/eagle@2x.jpg);
+      background-image: linear-gradient( 90deg, rgba(252,227,138,0.5) 0%, rgba(243,129,129,0.5) 100%),
+      url(../images/eagle@2x.jpg);
+    }
+}
+
+
+.logotype {
+    display: block;
+    font-size: 30px;
+    line-height: 36px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+}
+
+
+.navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 200px;
+    
+    &__list-item-link {
+      color:  rgb(255, 255, 255);
+        &:hover {
+            color: rgb(252, 227, 138);
+            -webkit-transition: all 0.25s linear;
+            -o-transition: all 0.25s linear;
+            transition: all 0.25s linear;
+        }
+    }
+    
+    &__list-item {
+      display: inline-block;  
+      position: relative;
+    
+    
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: rgb(252, 227, 138);
+        bottom: -10px;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 0.25s linear;
+        -o-transition: all 0.25s linear;
+        transition: all 0.25s linear;
+        position: absolute;
+      }
+      
+      &:not(:last-child) {
+        margin-right: 45px;
+      }
+      
+      &:nth-child(-n+5) {
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+      }
+      
+      &:hover::after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  
+  
+    &__list-icon {
+      fill:  rgb(255, 255, 255);
+      width: 18px;
+      height: 15px;
+    
+    
+      &:hover {
+        fill: rgb(252, 227, 138);
+        -webkit-transition: all 0.25s linear;
+        -o-transition: all 0.25s linear;
+        transition: all 0.25s linear;
+      }
+    }
+}
+
+
+.learn-more__btn {
+  display: block;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    width: 154px;
+    height: 34px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+}

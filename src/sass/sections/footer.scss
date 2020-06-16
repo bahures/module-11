@@ -1,0 +1,93 @@
+.footer {
+    width: 1200px;
+    margin: 0 auto;
+    border-top: solid 1px #e5e5e5;
+    height: 63px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+
+.copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; 
+    -webkit-box-align: center; 
+        -ms-flex-align: center; 
+            align-items: center;
+}
+
+
+.contact-form {
+    -ms-flex-preferred-size: 380px;
+        flex-basis: 380px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;  
+    
+    &__btn {
+      background-color: rgb(149, 225, 211);
+      width: 150px;
+      height: 40px;
+      border: none;
+      font-size: 14px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: center;
+    }
+    
+    &__input {
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(231, 231, 231);
+      background-color: rgb(255, 255, 255);
+      width: 230px;
+      height: 40px;
+      padding-left: 14px;
+      &::-webkit-input-placeholder {
+        font-family: 'Roboto';
+        ont-style: italic;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 24px;
+      }
+      &::-moz-placeholder {
+        font-family: 'Roboto';
+        ont-style: italic;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 24px;
+      }
+      &::-ms-input-placeholder {
+        font-family: 'Roboto';
+        ont-style: italic;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 24px;
+      }
+      &::placeholder {
+        font-family: 'Roboto';
+        ont-style: italic;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+}
+
+
+.copyright__link {
+    color: #f38181;
+}
